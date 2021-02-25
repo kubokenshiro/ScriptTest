@@ -11,7 +11,4 @@ public class Test : MonoBehaviour
         lastboss.Defence(3);
         lastboss.Magic(5);
     }
-        
-    
-   
 }

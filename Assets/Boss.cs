@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
+    private int[] array = {1, 2, 3, 4, 5};
+
     private int hp = 100;
     private int power = 25;
     private int mp = 53;
