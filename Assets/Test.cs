@@ -9,6 +9,10 @@ public class Test : MonoBehaviour
         Boss lastboss = new Boss();
         lastboss.Attack();
         lastboss.Defence(3);
+
+        for(int i = 0; i <= 10; i++)
+        {
         lastboss.Magic(5);
+        }
     }
 }

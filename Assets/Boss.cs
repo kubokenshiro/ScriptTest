@@ -13,13 +13,20 @@ public class Boss : MonoBehaviour
     public void Magic(int magic)
     {
         this.mp -= magic;
-        if(mp >= 5)
+        if(mp >= 0)
         {
             Debug.Log("魔法攻撃をした。残りMPは" + mp);
         }
+        else if(mp < 5)
+        {
+            //課題修正点
+            mp = mp;
+            Debug.Log("MPが足りないため魔法が使えない。");
+        } 
+        //課題修正点
         else if(mp <= 0)
         {
-            Debug.Log("MPが足りないため魔法が使えない。");
+            mp = 0;
         }
     }
 
